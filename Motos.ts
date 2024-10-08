@@ -1,11 +1,10 @@
 import { Vehiculo } from "./vehiculos";
 
 export class Moto extends Vehiculo{
-    private soporte: void;
    
       constructor (marca: string, modelo: number, patente: string, soporte: void){
         super(marca, modelo, patente);
-        this.soporte = soporte;
+       
     }
 
 //Getters 

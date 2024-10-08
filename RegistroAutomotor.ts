@@ -19,14 +19,14 @@ export class RegistroAut {
 }
   
 //Getters
-   public getlistaAutos(): Auto[]{
+   public getListaAutos(): Auto[]{
       return this.listaAutos;
 }
-   public getlistaCamiones(): Camion[]{
+   public getListaCamiones(): Camion[]{
       return this.listaCamiones;
 }
    
-   public getlistaMotos(): Moto[]{
+   public getListaMotos(): Moto[]{
       return this.listaMotos;
    }
 

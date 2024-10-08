@@ -22,13 +22,42 @@ const nuevoCamion = new Camion ("Volvo", 2012, "FRE223");
 
 const nuevaMoto = new Moto ("Smash", 2009, "GTR445")
 
-//Modificar Vehiculos
 
-RegistroAut.modificarAuto("RSR332", nuevoAuto);
+//crear una variable registro para agregar todos los datos
+const registro: RegistroAut = new RegistroAut([auto1, auto2], [camion1, camion2], [moto1, moto2]);
 
-RegistroAut.modificarCamion("FRE223", nuevoCamion);
+//agregar vehiculos
+registro.agregarAutos(auto1);
+registro.agregarAutos(auto2);
+console.log(registro.getListaAutos());
 
-RegistroAut.modificarMoto("GTR445", nuevaMoto);
+registro.agregarCamiones(camion1);
+registro.agregarCamiones(camion2);
+console.log(registro.getListaCamiones());
+
+registro.agregarMotos(moto1);
+registro.agregarMotos(moto2);
+console.log(registro.getListaMotos());
 
 
+//modificar
+registro.modificarAuto("RSR332", nuevoAuto);
+console.log(registro.SetListaAutos);
+
+registro.modificarCamion("FRE223", nuevoCamion);
+console.log(registro.SetListaCamiones);
+
+registro.modificarMoto("GTR445", nuevaMoto);
+console.log(registro.SetListaMotos);
+
+
+//eliminar
+registro.eliminarAuto("KEY413");
+console.log(registro.SetListaAutos);
+
+registro.eliminarCamion("ABF230");
+console.log(registro.SetListaCamiones);
+
+registro.eliminarMotos("XXS566");
+console.log(registro.SetListaCamiones);
 
